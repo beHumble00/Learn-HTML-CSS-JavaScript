@@ -1,0 +1,35 @@
+<!-- 
+    背景图缩放 - background-size (emmet -> bgz)
+        * 作用: 设置背景图大小
+        * 常用属性值:
+            关键字
+                cover   -> 等比例缩放图片以完全覆盖背景区, 可能背景图片部分看不见
+                contain -> 等比例缩放背景图片以完全装入背景区, 可能背景区部分空白
+            百分比 -> 根据盒子尺寸计算图片大小
+            数字 + 单位 (宽 高)
+ -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: auto;
+            width: 500px;
+            height: 500px;
+            background-color: palevioletred;
+            background-image: url(../../images/lejinfan.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100%;
+            /* background-size: contain; */
+        }
+    </style>
+</head>
+<body>
+    <div>div</div>
+</body>
+</html>

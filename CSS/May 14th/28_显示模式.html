@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: palevioletred;
+        }
+        .div1{
+            background-color: darkcyan;
+            width: 500px;
+            height: 100px;
+        }
+        img{
+            width: 200px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        块元素:
+            * 独占一行
+            * 宽度默认是父级的100%
+            * 添加宽高属性生效
+     -->
+    <div class="div1">div标签1</div>
+    <div>div标签1</div>
+
+    <!-- 
+        行内元素:
+            * 一行共存多个
+            * 由内容撑开尺寸
+            * 添加加宽高属性不生效
+     -->
+     <span>span111111</span><span>span</span>
+
+     <!-- 
+        行内块元素:
+            * 一行共存多个
+            * 尺寸由内容撑开
+            * 添加宽高属性生效
+      -->
+      <img src="../images/lejinfan.jpg" alt="">
+      <img src="../images/lejinfan.jpg" alt="">
+
+</body>
+</html>
