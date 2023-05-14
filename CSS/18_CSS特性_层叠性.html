@@ -1,0 +1,32 @@
+<!-- 
+    层叠性 :
+        * 相同的属性会覆盖 : 后面的CSS属性会覆盖前面的CSS属性
+        * 不同的属性会叠加 : 不同的CSS属性都会生效
+ -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            font-size: 28;
+            color: darkcyan;
+        }
+        /* 后面一个 div 选择器的 color 属性会覆盖前面的 color 最终为深绿色 */
+        /* 前面的div选择器没有设置 text-align 属性 这里的text-align也会生效*/
+        div{
+            text-align: center;
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        div 标签
+    </div>
+</body>
+</html>

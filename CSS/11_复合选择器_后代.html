@@ -1,0 +1,29 @@
+<!-- 复合选择器 : 由两个或多个基础选择器通过不同方式组合而成 -->
+<!-- 可以更高效, 更准确的选择目标元素 -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  父选择器 子选择器 {CSS属性} 父子之间用空格隔开  */
+        div span {
+            color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <!-- 复合选择器类型1 => 后代选择器 : 选中某元素的所有后代元素 -->
+    <span>
+        span
+    </span>
+    <div>
+        <span>div_span</span>
+            <p>
+                <span>div_p_span </span>    
+            </p>
+    </div>
+</body>
+</html>

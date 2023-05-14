@@ -1,0 +1,45 @@
+<!-- 
+    Emmet : 代码简写方式, 输入缩写VSCode会自动生成对应代码
+ -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 属性首字母属性值+属性首字母属性值 */
+        .box{
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 标签名.类名 => 生成带类名的标签 -->
+    <div class="box"></div>
+
+    <!-- 标签名#id名 => 生成带id的标签 -->
+    <div id="box"></div>
+
+    <!-- 标签+标签 => 生成一组同级标签 -->
+    <div></div>
+    <p></p>
+
+    <!-- 标签 > 标签 => 生成一组父子级标签, 右边为子级 -->
+    <div>
+        <p><span></span></p>
+    </div>
+
+    <!-- 标签 * n => 生成多个相同标签-->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- 标签{内容} => 生成带内容的标签 -->
+    <div>内容</div>
+</body>
+</html>
