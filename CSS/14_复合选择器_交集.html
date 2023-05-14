@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 写法 : 选择器1 选择器2 {CSS属性}; 选择器之间连写 没有任何符号 */
+        /* 选中类为 "box" 的 p标签 */
+        p.box{
+            color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <!-- 复合选择器类型4 => 并集选择器 : 选中同时满足多个条件的元素 -->
+    <p class="box"> p_clsss = box </p>
+    <p>p</p>
+    <div closs="box">
+        <p>div_p</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!-- 
+        叠加计算: 如果是复合选择器, 则需要权重叠加计算
+        公式: (每一行之间不存在进位)
+        行内样式 => id选择器个数 => 类选择器个数 => 标签选择器个数
+        * 从左向右依次比较个数, 同一级个数多的优先级最高, 如果个数相同, 则向后比较
+        * !important 权重最高
+        * 继承权重最低
+ -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span> span标签 </span>
+    <div>
+        div 标签
+        <span> div内span标签 </span>
+    </div>
+</body>
+</html>
