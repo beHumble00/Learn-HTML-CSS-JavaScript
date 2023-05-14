@@ -1,4 +1,4 @@
-# HTM/CSS/JavaScript学习
+# HTML/CSS/JavaScript学习
 ### May 13th
 ## HTML- Hyper Text Markup Language 超文本标记语言
 - **01 标签的写法**
