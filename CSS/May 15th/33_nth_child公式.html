@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 根据元素结构关系查找多个元素 */
+
+        /* 2n -> 偶数标签 */
+        /* li:nth-child(2n){
+            background-color: darkcyan;
+        } */
+
+        /* 2n-1/2n+1 -> 奇数标签 */
+        /* li:nth-child(2n + 1){
+            background-color: darkgreen;
+        } */
+
+        /* 5n -> 5的倍数的标签*/
+        /* li:nth-child(5n){
+            background-color: darkcyan;
+        } */
+
+        /* n+5 -> 找到第5个以及以后的标签*/
+        /* li:nth-child(n+5){
+            background-color: darkcyan;
+        } */
+
+        /* -n+5 -> 找到第5个以及之前的标签 */
+        li:nth-child(-n+5) {
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>li 标签 1</li>
+        <li>li 标签 2</li>
+        <li>li 标签 3</li>
+        <li>li 标签 4</li>
+        <li>li 标签 5</li>
+        <li>li 标签 6</li>
+        <li>li 标签 7</li>
+        <li>li 标签 8</li>
+        <li>li 标签 9</li>
+        <li>li 标签 0</li>
+    </ul>
+</body>
+
+</html>

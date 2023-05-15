@@ -1,0 +1,48 @@
+<!-- 
+    border -> bd
+        值: 边框线粗细 线条样式 颜色
+            * solid 实线
+            * dashed 虚线
+            * dotted 点线
+ -->
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            line-height: 300px;
+            margin: 10px;
+            color: black;
+            font-weight: bolder;
+        }
+
+        div:first-child {
+            border: 2px solid darkcyan;
+        }
+
+        div:nth-child(2) {
+            border: 2px dashed darkgreen;
+        }
+
+        div:nth-child(3) {
+            border: 2px dotted palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+    <div>solid实线</div>
+    <div>dashed虚线</div>
+    <div>dotted点线</div>
+</body>
+
+</html>

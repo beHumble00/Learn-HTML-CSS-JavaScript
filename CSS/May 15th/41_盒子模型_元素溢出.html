@@ -1,0 +1,35 @@
+<!-- 
+    overflow:
+        控制溢出元素的内容的显示方式
+         * hidden 溢出隐藏
+         * scroll 溢出滚动 (无论是否溢出, 都显示滚动条)
+         * auto   溢出滚动 (溢出才显示滚动条位置)
+ -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: 600px;
+            border: 1px solid #000;
+            background-color:palevioletred;
+
+            /* 隐藏溢出部分 */
+            /* overflow: hidden; */
+
+            /* 溢出显示滚动条(无论是否溢出都显示) */
+            /* overflow: scroll; */
+
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div><img src="../../images/lejinfan.jpg" alt=""></div>
+</body>
+</html>
