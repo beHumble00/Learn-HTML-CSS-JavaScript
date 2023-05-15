@@ -1,0 +1,34 @@
+<!-- 
+    默认情况:
+        盒子尺寸 = 内容尺寸 + border尺寸 + 内边距尺寸(padding)
+    给盒子添加 padding/border属性 导致撑大盒子的解决方案:
+        * 手动做减法 -> 减去border/padding的尺寸
+        * 内减模式   -> box-sizing : border-box
+ -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+            background-color: palevioletred;
+            text-align: center;
+            line-height: 400px;
+            color: white;
+            font-size: 40px;
+            font-weight: bolder;
+            padding: 20px;
+            /* 启动内减模式 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>BOX</div>
+</body>
+</html>
