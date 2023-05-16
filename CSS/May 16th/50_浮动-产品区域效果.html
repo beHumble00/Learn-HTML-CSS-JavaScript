@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .product {
+            margin: 100px auto;
+            width: 1226px;
+            height: 628px;
+            background-color: palevioletred;
+        }
+
+        .left{
+            float: left;
+            width: 234px;
+            height: 628px;
+            background-color:darkcyan;
+        }
+
+        .right{
+            float: right;
+            width: 978px;
+            height: 628px;
+            background-color:darkgreen;
+        }
+
+        .right li{
+            margin-right: 14px;
+            margin-bottom: 14px;
+            float: left;
+            width: 234px;
+            height: 300px;
+            background-color:darkcyan;
+        }
+
+        .right li:nth-child(4n){
+            margin-right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product">
+        <div class="left"></div>
+        <div class="right">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
