@@ -1,0 +1,34 @@
+<!-- 
+    浮动:让块元素水平排列
+        float left  -> 左对齐 right -> 右对齐
+        特点
+            * 顶对齐, 具备行内块的显示模式
+            * 浮动的盒子会脱标(脱离标准流控制)
+ -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            width: 200px;
+            height: 200px;
+            background-color: darkcyan;
+            float: left;
+        }
+        .two{
+            width: 400px;
+            height: 400px;
+            background-color: darkgreen;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!-- 
+        场景:
+        浮动元素会脱标, 如果父级没有高度, 子级无法撑开父级高度(可能导致页面错乱)
+
+        解决方法:
+        清除浮动带来的影响
+
+        方法二 : 单伪元素
+
+        方法三 : 父级添加overflow:hidden
+
+ -->
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top {
+            margin: 10px auto;
+            width: 1200px;
+            background-color: palevioletred;
+            overflow: hidden;
+        }
+
+        .bottom {
+            height: 100px;
+            background-color: darkcyan;
+        }
+
+        .left {
+            float: left;
+            height: 300px;
+            width: 300px;
+            background-color:darkgreen;
+        }
+
+        .right{
+            float: right;
+            height: 300px;
+            width: 600px;
+            background-color: brown;
+        }
+
+        /* 单伪元素 */
+        /* .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        } */
+
+        /* 双伪元素 */
+        /* .clearfix::before,
+        .clearfix::after{
+            content: "";
+            display: table;
+        } */
+        
+    </style>
+</head>
+
+<body>
+    <div class="top clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="bottom"></div>
+</body>
+
+</html>
