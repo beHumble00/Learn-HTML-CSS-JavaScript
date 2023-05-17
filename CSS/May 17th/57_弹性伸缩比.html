@@ -1,0 +1,53 @@
+<!-- 
+    控制弹性盒子的主轴方向的尺寸
+    属性名 - flex
+    属性值 - 整数数字, 表示占用父级剩余尺寸的份数
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            在默认情况下
+                主轴方向尺寸靠内容撑开
+                侧轴默认拉伸
+         */
+        .box {
+            display: flex;
+            height: 300px;
+            border: 1px solid #000;
+        }
+
+        .box div {
+            height: 100px;
+            background-color: palevioletred;
+        }
+
+        .box div:nth-child(1) {
+            flex: 3;
+        }
+
+        .box div:nth-child(2) {
+            flex: 4;
+        }
+
+        .box div:nth-child(3) {
+            flex: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+
+</html>

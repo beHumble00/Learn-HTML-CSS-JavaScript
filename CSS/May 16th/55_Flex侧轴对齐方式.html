@@ -1,0 +1,55 @@
+<!-- 
+    aligin-items
+        当前弹性容器内所有弹性盒子的侧轴对齐方式(给弹性容器设置)
+
+    aligin-self
+        单独控制某个谭小盒子的侧轴对齐方式
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+
+            /* 
+                弹性盒子沿着测轴线被拉伸至指铺满容器
+                    * 弹性盒子没有设置侧轴方向尺寸才能拉伸
+             */
+            /* align-items: stretch; */
+
+            /* center 侧轴居中 */
+            /* align-items: center; */
+
+            /* 起点开始排列 */
+            /* align-items: start; */
+
+            /* 终点开始排列 */
+            /* align-items: end; */
+
+            height: 300px;
+            border: 1px solid #000;
+        }
+        .box div{
+            width: 200px;
+            height: 100px;
+            background-color: palevioletred;
+        }
+
+        .box div:nth-child(2){
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
