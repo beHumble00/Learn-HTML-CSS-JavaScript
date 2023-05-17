@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px auto;
+            width: 1200px;
+            height: 418px;
+            border: 1px solid #dddddd;
+            border-radius: 10px;
+        }
+
+        .box div {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 485px;
+            height:  70px;
+            /* background-color: palevioletred; */
+            background-repeat: no-repeat;
+            background-size: 17%;
+        }
+        .box div:nth-child(1) { 
+            background-image: url(images/1.svg);
+        }
+
+        .box div:nth-child(2) {
+            background-image: url(images/2.svg);
+        }
+
+        .box div:nth-child(3) {
+            background-image: url(images/3.svg);
+        }
+
+        .box div:nth-child(4) {
+            background-image: url(images/4.svg);
+        }
+        .box h5, p{
+            margin-left: 95px ;
+        }
+        .box h5{ 
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .box p{
+            font-size: 14px;
+        }
+    </style> 
+</head>
+
+<body>
+    <div class="box">
+        <div>
+            <h5>一键发布多端</h5>
+            <p>发布视频到抖音短视频 西瓜视频以及今日头条</p>
+        </div>
+        <div>
+            <h5>管理视频内容</h5>
+            <p>支持修改已发布稿件状态和实时查询视频审核状态</p>
+        </div>
+        <div>
+            <h5>发布携带组件</h5>
+            <p>支持分享内容携带小程序, 地理位置信息等组件, 扩展内容及突出地域性</p>
+        </div>
+        <div>
+            <h5>数据评估分析</h5>
+            <p>获取视频在对应产品内的数据表现, 获取抖音热点, 及时进行表现评估</p>
+        </div>
+    </div>
+</body>
+
+</html>
