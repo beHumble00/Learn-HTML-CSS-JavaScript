@@ -1,0 +1,85 @@
+<!-- 
+    CSS精灵:
+        CSS Sperites, 是一种网页图片应用处理方式, 把网页中一些背景整合到一个图片文件中,
+        再用background - position精确定位找出图片的位置
+    优点:
+        减少服务器被请求的次数, 减轻服务器的压力, 提高页面加载速度.
+ -->
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+        }
+        /* 实现步骤 */
+        .L {
+            /* 1 创建盒子盒子尺寸与小图尺寸相同 */
+            width: 96px;
+            height: 111px;
+
+            /* 2. 设置盒子背景图为精灵图 */
+            background-image: url(images/abcd.jpg);
+
+            /* 3. 添加 background-position 属性 改变背景图的位置*/
+            background-position: -5px -276px;
+        }
+
+        .E {
+            width: 97px;
+            height: 108px;
+            background-image: url(images/abcd.jpg);
+            background-position: -482px -7px;
+        }
+
+        .J {
+            width: 106px;
+            height: 105px;
+            background-image: url(images/abcd.jpg);
+            background-position: -389px -144px;
+        }
+
+        .I{
+            width: 61px;
+            height: 111px;
+            background-image: url(images/abcd.jpg);
+            background-position: -327px -141px;
+        }
+        .N{
+            width: 113px;
+            height: 112px;
+            background-image: url(images/abcd.jpg);
+            background-position: -255px -274px;
+        }
+        .F{
+            width: 92px;
+            height: 111px;
+            background-image: url(images/abcd.jpg);
+            background-position: 0px -138px;
+        }
+        .A{
+            width: 107px;
+            height: 111px;
+            background-image: url(images/abcd.jpg);
+            background-position: 0px -7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="L"></div>
+    <div class="E"></div>
+    <div class="J"></div>
+    <div class="I"></div>
+    <div class="N"></div>
+    <div class="F"></div>
+    <div class="A"></div>
+    <div class="N"></div>
+</body>
+
+</html>
